@@ -2,7 +2,9 @@
 
 ## Overview
 
-CUTLASS (CUDA Templates for Linear Algebra Subroutines and Solvers) is NVIDIA's open-source, header-only C++ template library for high-performance GEMM and related computations on NVIDIA GPUs. Version 3.5.0, BSD-3-Clause licensed.
+CUTLASS (CUDA Templates for Linear Algebra Subroutines and Solvers) is NVIDIA's open-source, header-only C++ template library for high-performance GEMM and related computations on NVIDIA GPUs. Version 4.4.2, BSD-3-Clause licensed.
+
+Chinese learning guide: https://justpi.github.io/cutlass (source in `pages/` directory)
 
 Key concepts:
 - Hierarchical decomposition of GEMM (device → kernel → threadblock/collective → warp → thread)
