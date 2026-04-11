@@ -55,6 +55,9 @@ NVIDIA CUTLASS — 高性能 CUDA C++ 矩阵运算模板库的系统学习文档
 ### [进阶主题](advanced/programming-guidelines)
 编程规范、性能分析工具、Pipeline 同步原语、Blackwell 架构支持等高级话题。
 
+### [实战专题](topics/gemm-quantization)
+深度教程：GEMM 各种量化精度（FP16/BF16/FP8/INT8/INT4/FP4）的配置和优化，以及 FlashAttention 的原理与 CUTLASS 中各种变体（Causal、GQA、MLA、Paged KV 等）的实现。
+
 ---
 
 ## 快速开始
