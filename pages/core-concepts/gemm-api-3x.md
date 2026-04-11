@@ -38,6 +38,7 @@ Device Layer (cutlass::gemm::device::GemmUniversalAdapter)
 - Kernel 启动配置（Grid 大小、Shared Memory 大小等）
 - 实际的 Kernel 启动
 
+{% raw %}
 ```cpp
 #include <cutlass/gemm/device/gemm_universal_adapter.h>
 #include <cutlass/gemm/kernel/gemm_universal.hpp>
@@ -65,6 +66,7 @@ Gemm gemm;
 gemm.initialize(args);
 gemm.run();
 ```
+{% endraw %}
 
 ---
 
@@ -228,6 +230,7 @@ auto stride_B = make_stride(Int<1>{}, K);
 
 3.x 原生支持 Batched GEMM，通过在问题形状中添加 L 维度：
 
+{% raw %}
 ```cpp
 typename Gemm::Arguments args{
     cutlass::gemm::GemmUniversalMode::kBatch,
@@ -236,6 +239,7 @@ typename Gemm::Arguments args{
     {{alpha, beta}, ptr_C, stride_C, ptr_D, stride_D}
 };
 ```
+{% endraw %}
 
 ---
 
